@@ -1,3 +1,5 @@
+//Controls the Welcome Page
+
 package com.in28minutes.springboot.web.controller;
 
 import org.springframework.security.core.context.SecurityContextHolder;

@@ -1,3 +1,5 @@
+//Handles exceptions
+
 package com.in28minutes.springboot.web.controller;
 
 import javax.servlet.http.HttpServletRequest;
