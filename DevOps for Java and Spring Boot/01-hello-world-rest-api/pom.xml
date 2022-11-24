@@ -55,6 +55,25 @@
 			</plugin>
 
 			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>1.6.1</version>
+				<configuration>
+					<container>
+						<creationTime>USE_CURRENT_TIMESTAMP</creationTime>
+					</container>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>dockerBuild</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<!-- 		<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
 				<executions>
@@ -75,9 +94,10 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
+	</plugin>
+-->
 
-<!-- 			<plugin>
+			<!-- 			<plugin>
 				<groupId>com.spotify</groupId>
 				<artifactId>dockerfile-maven-plugin</artifactId>
 				<version>1.4.10</version>
@@ -95,7 +115,7 @@
 					<skipDockerInfo>true</skipDockerInfo>
 				</configuration>
 		</plugin>
--->	
+-->
 
 
 		</plugins>
